@@ -1,0 +1,26 @@
+local CoreGui = game:GetService("StarterGui")CoreGui:SetCore("SendNotification", {    Title game:GetService("StarterGui")CoreGui:SetCore("SendNotification", {    Title = "脚本",    Text = "耐心等待（反挂机已开启）",    Duration = 5, })print("反挂机开启")		local vu = 
+local screenGui = Instance.new("78UI")
+screenGui.Name = "UI"
+screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 300, 0, 200)
+frame.Position = UDim2.new(0.5, -150, 0.5, -100)
+frame.BackgroundColor3 = Color3.new(0.2, 0.2, 0.2)
+frame.Parent = screenGui
+local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
+
+local Window = OrionLib:MakeWindow({Name = "脚本", HidePremium = false, SaveConfig = false, IntroText = "欢迎使用", ConfigFolder = "欢迎使用"})
+
+local Tab = Window:MakeTab({
+    Name = "脚本公告",
+    Icon = "rbxassetid://10527577695",
+    PremiumOnly = false
+})
+
+Tab:AddParagraph("无"")
+Tab:AddLabel("无")
+Tab:AddLabel("你的注入器:"..identifyexecutor())
+Tab:AddLabel("无")
+Tab:AddLabel("无")
+Tab:AddLabel("无")
